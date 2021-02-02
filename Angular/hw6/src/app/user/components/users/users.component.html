@@ -1,0 +1,6 @@
+<div *ngFor="let user of users" >
+  <app-user [user]="user" (bubbleUpUser)="getBubbleUser($event)"></app-user>
+</div>
+<hr>
+<h1>{{chosenOne?.id}} - {{chosenOne?.email}}</h1>
+<router-outlet></router-outlet>
